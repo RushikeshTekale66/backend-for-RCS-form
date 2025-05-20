@@ -1,16 +1,19 @@
 const mongoose = require("mongoose");
 
 const formDataSchema = new mongoose.Schema({
+    profile:{
+        type:String
+    },
     fullName: {
         type: String
     },
     description: {
         type: String
     },
-    heroImageUrl: {
+    heroImage: {
         type: String
     },
-    logoUrl: {
+    logo: {
         type: String,
     },
     hexCode: {
